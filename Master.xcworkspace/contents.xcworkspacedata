@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MasterPlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "group:CoreLocation &amp; MapKit/CoreLocation &amp; MapKit.xcodeproj">
+   </FileRef>
+</Workspace>
