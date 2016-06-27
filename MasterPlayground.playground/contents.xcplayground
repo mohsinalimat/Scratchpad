@@ -8,5 +8,6 @@
         <page name='Core Graphics '/>
         <page name='Grand Central Dispatch'/>
         <page name='Sequence &amp; Generator'/>
+        <page name='Advanced Swift'/>
     </pages>
 </playground>

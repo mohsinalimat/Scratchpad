@@ -2,6 +2,8 @@
 
 import Foundation
 
+var test : Int? = .Some(20)
+
 // I am a simple variable 
 var count = 10
 
@@ -43,6 +45,24 @@ if case let .Some(value) = singleOptional {
     print(value)
 }
 
+//Optional Chaining 
+struct A {
+    let b : B?
+}
+
+struct B {
+    let x : Int = 10
+}
+
+let a : A? = A(b: B())
+if let a = a {
+    if let b = a.b {
+        print(b.x)
+    }
+}
+
+let yo = a?.b?.x
+yo == .Some(20)
 
 // Unwrapping double Optionals 
 
