@@ -1,17 +1,15 @@
 # Swift Projects & Playgrounds
 I will use this workspace mainly to collect code snippets via playgrounds and to build small apps to learn new frameworks 
 
-This Repository will contain Playgrounds for a lot of Things
-
 ##Playgrounds
 
 ✅ Optionals
 
 ✅ Enums
 
-❌ Painting with Core Graphics
+✅ Painting with Core Graphics
 
-❌ Sequence & Generator Protocol
+✅ Sequence & Generator Protocol
 
 ❌ Advanced Swift 
 
