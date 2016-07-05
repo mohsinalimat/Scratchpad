@@ -2,12 +2,66 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CloudKit/CloudKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SearchAPI/SearchAPI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CustomControls/CustomControls.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UITableView/UITableView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Saving-Data/Saving-Data.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Adaptive-Layout/Adaptive-Layout.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CALayer/CALayer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Autolayout/Autolayout.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:App-Extensions/App-Extensions.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WatchOS/WatchOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AVFoundation/AVFoundation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Animations/Animations.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NSURLSession/NSURLSession.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UI-Testing/UI-Testing.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core-Data/Core-Data.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GCD-Grand Central Dispatch/GCD-Grand Central Dispatch.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CollectionViews/CollectionViews.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoreLocation &amp; MapKit/CoreLocation &amp; MapKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SpriteKit/SpriteKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:README.md">
    </FileRef>
    <FileRef
       location = "group:MasterPlayground.playground">
-   </FileRef>
-   <FileRef
-      location = "group:CoreLocation &amp; MapKit/CoreLocation &amp; MapKit.xcodeproj">
    </FileRef>
 </Workspace>

@@ -64,6 +64,12 @@ if let a = a {
 let yo = a?.b?.x
 yo == .Some(20)
 
+let c: Int? = 10
+let d: String = "Hello World"
+let e = c ?? d
+
+
+
 // Unwrapping double Optionals 
 
 //Classic way 

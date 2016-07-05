@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
-        <page name='Optionals'/>
         <page name='Enums'/>
         <page name='Networking'/>
         <page name='NSOperation'/>
         <page name='Core Graphics '/>
         <page name='Grand Central Dispatch'/>
         <page name='Sequence &amp; Generator'/>
-        <page name='Advanced Swift'/>
     </pages>
 </playground>
