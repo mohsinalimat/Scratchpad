@@ -58,7 +58,7 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ❌ SpriteKit
 
-I also write Blog Posts on a regular basis:
+##I also write Blog Posts on a regular basis:
 
 ###My iOS Development Toolkit
 https://medium.com/ios-os-x-development/my-ios-development-toolkit-2016-ba7601b68085#.8e80w9fog
