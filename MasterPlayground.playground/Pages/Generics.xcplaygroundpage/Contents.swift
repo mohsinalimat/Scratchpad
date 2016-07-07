@@ -38,4 +38,30 @@ let c = a + b
 c.imag
 c.real
 
+
+/// Generic Stack Class
+
+struct Stack<T> {
+    
+    internal var stack : [T] = [T]() // should be private, made this public for playground
+    
+    internal mutating func push(element:T) {
+        stack.insert(element, atIndex: 0)
+    }
+    
+    internal mutating func pop() -> T {
+        let poppedElement = stack[0]
+        stack.removeAtIndex(0)
+        return poppedElement
+    }
+}
+
+var intStack = Stack<Int>()
+intStack.push(1)
+intStack.push(2)
+intStack.push(3)
+
+intStack.pop()
+intStack.stack
+
 //: [Next](@next)
