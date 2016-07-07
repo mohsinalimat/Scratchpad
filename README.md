@@ -1,5 +1,6 @@
 # Swift Projects & Playgrounds
-I will use this workspace mainly to collect code snippets via playgrounds and to build small apps to learn new frameworks 
+
+This is a curated Workspace containing playgrounds and projects to learn and improve my iOS Framework and Swift Language skills.
 
 ##Playgrounds
 
@@ -11,9 +12,9 @@ I will use this workspace mainly to collect code snippets via playgrounds and to
 
 ✅ Sequence & Generator Protocol
 
-❌ Advanced Swift 
-
 ✅ Generics
+
+❌ Advanced Swift 
 
 ##Projects 
 
