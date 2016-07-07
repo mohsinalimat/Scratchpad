@@ -5,7 +5,11 @@ import UIKit
 import CoreLocation
 
 class ViewController: UIViewController {
+    
+    /// Location Manager is reponsible for tracking your location and givng feedback about changes using a delegation protocol
     var locationManager: CLLocationManager?
+    
+    /// You can define Locations using CLLocation 
     var startLocation: CLLocation?
     var locationOfWorldLargestHairBall = CLLocation(latitude: 40.728657, longitude: -73.631744)
 
@@ -14,10 +18,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager = CLLocationManager()
-        locationManager?.delegate = self
-        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager?.requestWhenInUseAuthorization()
+        
+        locationManager = CLLocationManager() // Creating a Manager Object
+        
+        locationManager?.delegate = self // Setting ourself as an delegate
+        
+        locationManager?.desiredAccuracy = kCLLocationAccuracyBest // keep battery life in mind
+        
+        locationManager?.requestWhenInUseAuthorization() // This will present a accept dialog to the user
     }
 }
 
@@ -34,7 +42,10 @@ extension ViewController : CLLocationManagerDelegate {
             hairBallDistanceLabel?.text = "\(latest.distanceFromLocation(self.locationOfWorldLargestHairBall))m"
         }
     }
+    
+    /// If the user accepted location services for your app if will call this method
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        /// if the user authorized on of the following options start tracking 
         if status == .AuthorizedWhenInUse || status == .AuthorizedAlways {
             locationManager?.startUpdatingLocation()
         }

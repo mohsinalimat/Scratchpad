@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
       location = "group:CloudKit/CloudKit.xcodeproj">
    </FileRef>
    <FileRef
@@ -57,9 +60,6 @@
    </FileRef>
    <FileRef
       location = "group:SpriteKit/SpriteKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:README.md">
    </FileRef>
    <FileRef
       location = "group:MasterPlayground.playground">
