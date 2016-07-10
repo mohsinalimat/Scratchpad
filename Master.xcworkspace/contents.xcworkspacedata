@@ -5,6 +5,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:CoreLocation &amp; MapKit/CoreLocation &amp; MapKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CloudKit/CloudKit.xcodeproj">
    </FileRef>
    <FileRef
@@ -54,9 +57,6 @@
    </FileRef>
    <FileRef
       location = "group:CollectionViews/CollectionViews.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:CoreLocation &amp; MapKit/CoreLocation &amp; MapKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:SpriteKit/SpriteKit.xcodeproj">

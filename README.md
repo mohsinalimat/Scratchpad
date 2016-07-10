@@ -18,7 +18,9 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ##Projects 
 
-❌ MapKit and Core Location 
+❌ StackViews
+
+✅ MapKit and Core Location 
 
 ❌ CloudKit
 

@@ -12,6 +12,10 @@
 		154533701D1B0E8B00AC9F3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1545336E1D1B0E8B00AC9F3F /* Main.storyboard */; };
 		154533721D1B0E8B00AC9F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154533711D1B0E8B00AC9F3F /* Assets.xcassets */; };
 		154533751D1B0E8B00AC9F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154533731D1B0E8B00AC9F3F /* LaunchScreen.storyboard */; };
+		15AF76651D328E80001EAA14 /* GeoCodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF76641D328E80001EAA14 /* GeoCodingHelper.swift */; };
+		15AF766B1D32958B001EAA14 /* location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 15AF766A1D32958B001EAA14 /* location.gpx */; };
+		15AF766E1D3297B7001EAA14 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AF766D1D3297B7001EAA14 /* MapKit.framework */; };
+		15AF76701D329A67001EAA14 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF766F1D329A67001EAA14 /* MapKitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		154533711D1B0E8B00AC9F3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		154533741D1B0E8B00AC9F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		154533761D1B0E8B00AC9F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15AF76641D328E80001EAA14 /* GeoCodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCodingHelper.swift; sourceTree = "<group>"; };
+		15AF766A1D32958B001EAA14 /* location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = location.gpx; sourceTree = "<group>"; };
+		15AF766D1D3297B7001EAA14 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		15AF766F1D329A67001EAA14 /* MapKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AF766E1D3297B7001EAA14 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				154533691D1B0E8B00AC9F3F /* CoreLocation & MapKit */,
 				154533681D1B0E8B00AC9F3F /* Products */,
+				15AF766C1D3297B6001EAA14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +65,24 @@
 			isa = PBXGroup;
 			children = (
 				1545336A1D1B0E8B00AC9F3F /* AppDelegate.swift */,
+				15AF766F1D329A67001EAA14 /* MapKitViewController.swift */,
 				1545336C1D1B0E8B00AC9F3F /* ViewController.swift */,
+				15AF76641D328E80001EAA14 /* GeoCodingHelper.swift */,
+				15AF766A1D32958B001EAA14 /* location.gpx */,
 				1545336E1D1B0E8B00AC9F3F /* Main.storyboard */,
 				154533711D1B0E8B00AC9F3F /* Assets.xcassets */,
 				154533731D1B0E8B00AC9F3F /* LaunchScreen.storyboard */,
 				154533761D1B0E8B00AC9F3F /* Info.plist */,
 			);
 			path = "CoreLocation & MapKit";
+			sourceTree = "<group>";
+		};
+		15AF766C1D3297B6001EAA14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15AF766D1D3297B7001EAA14 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +117,12 @@
 				TargetAttributes = {
 					154533661D1B0E8B00AC9F3F = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,6 +151,7 @@
 			files = (
 				154533751D1B0E8B00AC9F3F /* LaunchScreen.storyboard in Resources */,
 				154533721D1B0E8B00AC9F3F /* Assets.xcassets in Resources */,
+				15AF766B1D32958B001EAA14 /* location.gpx in Resources */,
 				154533701D1B0E8B00AC9F3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AF76701D329A67001EAA14 /* MapKitViewController.swift in Sources */,
 				1545336D1D1B0E8B00AC9F3F /* ViewController.swift in Sources */,
 				1545336B1D1B0E8B00AC9F3F /* AppDelegate.swift in Sources */,
+				15AF76651D328E80001EAA14 /* GeoCodingHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sebastianboldt.CoreLocation---MapKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,6 +295,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sebastianboldt.CoreLocation---MapKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

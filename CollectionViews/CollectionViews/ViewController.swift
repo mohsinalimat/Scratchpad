@@ -23,3 +23,4 @@ class ViewController: UIViewController {
 
 }
 
+@IBOutlet weak var mapView: MKMapView!
