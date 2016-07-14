@@ -1,6 +1,6 @@
 # Swift Projects & Playgrounds
 
-This is a curated Workspace containing playgrounds and projects to learn and improve my iOS Framework and Swift Language skills.
+This is a curated Workspace (Swift 3.0 ✅) containing playgrounds and projects to learn and improve my iOS Framework and Swift Language skills.
 
 ##Playgrounds
 
@@ -18,9 +18,11 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ##Projects 
 
-❌ StackViews
+✅ Grand Central Dispatch
 
 ✅ MapKit and Core Location 
+
+❌ StackViews
 
 ❌ CloudKit
 
@@ -51,8 +53,6 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 ❌ UI-Testing
 
 ❌ Core Data
-
-❌ Grand Central Dispatch
 
 ❌ CollectionViews and CollectionLayouts
 
