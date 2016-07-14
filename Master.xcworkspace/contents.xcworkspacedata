@@ -5,6 +5,12 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:Autolayout/Autolayout.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Adaptive-Layout/Adaptive-Layout.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CoreLocation &amp; MapKit/CoreLocation &amp; MapKit.xcodeproj">
    </FileRef>
    <FileRef
@@ -23,13 +29,7 @@
       location = "group:Saving-Data/Saving-Data.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Adaptive-Layout/Adaptive-Layout.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:CALayer/CALayer.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Autolayout/Autolayout.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:App-Extensions/App-Extensions.xcodeproj">

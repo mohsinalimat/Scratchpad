@@ -10,7 +10,7 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ Enums
 
-✅ Painting with Core Graphics
+✅ Core Graphics
 
 ✅ Sequence & Generator Protocol
 
@@ -24,13 +24,13 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ MapKit and Core Location 
 
-❌ StackViews
+❌ Custom Controls (UIControl, Core Craphics, CALayer)
+
+❌ StackView
 
 ❌ CloudKit
 
 ❌ SearchAPI
-
-❌ Custom Controls
 
 ❌ UITableView
 
@@ -50,7 +50,7 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ❌ Animations
 
-❌ NSURLSessions
+❌ NSURLSession
 
 ❌ UI-Testing
 
