@@ -56,8 +56,6 @@ This is a curated Workspace (Swift 3.0 ✅) containing playgrounds and projects 
 
 ❌ CollectionViews and CollectionLayouts
 
-❌ Core Locations and MapKit
-
 ❌ SpriteKit
 
 ##I also write Blog Posts on a regular basis:
