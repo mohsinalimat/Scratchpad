@@ -18,7 +18,10 @@ class ViewController: UIViewController {
     
     // USE SYNC FOR LOCKING PURPOSES
     
+    // DISPATCH QUEUE ARE SERIAL BY DEFAULT
+    
     // DISPATCH_ONCE
+    
     // dispatch_once is no longer available in Swift 3.0
     // instead you should use lazily instantiated static properties like so:
     static let justOnce : String = {
@@ -173,7 +176,7 @@ class ViewController: UIViewController {
     // Blocks that can be cancelled
     // In Swift 3 we call this Dispatch_Work_item
     @IBAction func testDispatchItems() {
-        let queue = DispatchQueue.global(attributes:[.qosUserInitiated])
+        let queue = DispatchQueue(label: "ConQueue", attributes: .concurrent)
         // assignCurrentContext used current QOS
         var item : DispatchWorkItem?
         item = DispatchWorkItem(flags:.assignCurrentContext) { [weak self] in
@@ -193,22 +196,6 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-    @IBAction func testLocking() {
-        let object = MyObject()
-        
-        let queue1 = DispatchQueue(label: "queue1",attributes: .concurrent)
-        let queue2 = DispatchQueue(label: "queue2",attributes: .concurrent)
-        
-        queue1.async {
-            object.state = 20
-        }
-        
-        queue2.async {
-            object.state = 100
-        }
-        
-    }
 }
 
 extension ViewController {
@@ -222,7 +209,7 @@ extension ViewController {
 }
 
 
-// Locking
+// Locking using Serial Dispatch Queues
 class MyObject {
     private var internalState: Int = 0
     private let internalQueue: DispatchQueue = DispatchQueue(label:"LockingQueue",attributes: .serial)
