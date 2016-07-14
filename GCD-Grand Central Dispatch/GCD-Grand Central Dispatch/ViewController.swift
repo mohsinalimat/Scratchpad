@@ -8,9 +8,16 @@
 
 import UIKit
 
-//TODO: More Documentation & Semaphore
+//TODO: More Documentation, Semaphore & Dispatch Source
+
 class ViewController: UIViewController {
 
+    // QOS
+    // .userInitiated -> Button Tapped
+    // .background -> Networking 
+    
+    // USE SYNC FOR LOCKING PURPOSES
+    
     // DISPATCH_ONCE
     // dispatch_once is no longer available in Swift 3.0
     // instead you should use lazily instantiated static properties like so:
@@ -43,6 +50,7 @@ class ViewController: UIViewController {
     
     // SYNC
     // CAUTION: Be VERY careful in this situation; if you’re running in a queue and call dispatch_sync targeting the same queue, you will definitely create a deadlock.
+    // Deadlocks are also possible with a tree state system configuration
     @IBAction func testDispatchSync() {
         print("**********************")
         print("Before Dispatch_Sync")
@@ -128,7 +136,7 @@ class ViewController: UIViewController {
     
     @IBAction func testDispatchGroups() {
         
-        let queue = DispatchQueue.global(attributes:.qosUserInitiated)
+        let queue = DispatchQueue(label: "ConQueue", attributes: .concurrent)
         let group = DispatchGroup()
         
         queue.async(group: group) { [weak self] in
@@ -164,20 +172,42 @@ class ViewController: UIViewController {
     // DISPATCH_BLOCK
     // Blocks that can be cancelled
     // In Swift 3 we call this Dispatch_Work_item
-    // Documentation is still uncomplete, i am not sure how to use this API at the moment cause cancel does not cancel the current task
     @IBAction func testDispatchItems() {
-        let queue = DispatchQueue.global(attributes:.qosUserInitiated)
-        let item = DispatchWorkItem { [weak self] in
+        let queue = DispatchQueue.global(attributes:[.qosUserInitiated])
+        // assignCurrentContext used current QOS
+        var item : DispatchWorkItem?
+        item = DispatchWorkItem(flags:.assignCurrentContext) { [weak self] in
             for i in 0...10000000 {
+                if let item = item {
+                    if item.isCancelled { break }
+                }
                 print(i)
                 self?.heavyWork()
             }
         }
         
-        queue.async(execute: item)
-        queue.after(walltime: .now() + 2) {
-            item.cancel()
+        if let item = item {
+            queue.async(execute: item)
+            queue.after(walltime: .now() + 2) {
+                item.cancel()
+            }
         }
+    }
+    
+    @IBAction func testLocking() {
+        let object = MyObject()
+        
+        let queue1 = DispatchQueue(label: "queue1",attributes: .concurrent)
+        let queue2 = DispatchQueue(label: "queue2",attributes: .concurrent)
+        
+        queue1.async {
+            object.state = 20
+        }
+        
+        queue2.async {
+            object.state = 100
+        }
+        
     }
 }
 
@@ -190,3 +220,21 @@ extension ViewController {
         print("finished")
     }
 }
+
+
+// Locking
+class MyObject {
+    private var internalState: Int = 0
+    private let internalQueue: DispatchQueue = DispatchQueue(label:"LockingQueue",attributes: .serial)
+    
+    var state: Int {
+        get {
+            return internalQueue.sync { internalState }
+        }
+        
+        set (newState) {
+            internalQueue.sync { internalState = newState }
+        }
+    }
+}
+
