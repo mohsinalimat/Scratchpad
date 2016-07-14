@@ -1,6 +1,6 @@
-# Swift Projects & Playgrounds
+# Swift Projects & Playgrounds (Swift 3.0 ✅)
 
-This is a curated Workspace (Swift 3.0 ✅) containing playgrounds and projects to learn and improve my iOS Framework and Swift Language skills.
+This is a curated Workspace containing playgrounds and projects to learn and improve my iOS Framework and Swift Language skills.
 
 ##Playgrounds
 
