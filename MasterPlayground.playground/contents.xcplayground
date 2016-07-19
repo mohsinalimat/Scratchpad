@@ -9,5 +9,6 @@
         <page name='Advanced Swift'/>
         <page name='Optionals'/>
         <page name='Generics'/>
+        <page name='Property Animators'/>
     </pages>
 </playground>

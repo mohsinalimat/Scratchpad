@@ -24,6 +24,8 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ MapKit and Core Location 
 
+✅ Property Animators
+
 ❌ Custom Controls (UIControl, Core Craphics, CALayer)
 
 ❌ StackView
