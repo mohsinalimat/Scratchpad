@@ -5,6 +5,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:StackViews/StackViews.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PropertyAnimators/PropertyAnimators.xcodeproj">
    </FileRef>
    <FileRef

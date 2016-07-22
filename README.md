@@ -18,7 +18,7 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ❌ Advanced Swift 
 
-##Projects 
+## Projects 
 
 ✅ Grand Central Dispatch
 
@@ -26,9 +26,9 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ Property Animators
 
-❌ Custom Controls (UIControl, Core Craphics, CALayer)
+✅ StackView 
 
-❌ StackView
+❌ Custom Controls (UIControl, Core Craphics, CALayer)
 
 ❌ CloudKit
 
