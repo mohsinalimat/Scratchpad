@@ -16,7 +16,7 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ Generics
 
-❌ Advanced Swift 
+✅ Unsafe Mutable Pointers
 
 ## Projects 
 
@@ -61,6 +61,10 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 ❌ CollectionViews and CollectionLayouts
 
 ❌ SpriteKit
+
+#WWDC 2016 
+
+✅ What's new in Foundation for Swift 3.0 
 
 ##I also write Blog Posts on a regular basis:
 

@@ -70,4 +70,7 @@
    <FileRef
       location = "group:MasterPlayground.playground">
    </FileRef>
+   <FileRef
+      location = "group:WWDC 2016.playground">
+   </FileRef>
 </Workspace>
