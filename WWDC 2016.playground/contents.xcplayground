@@ -4,5 +4,6 @@
         <page name='Networking for the modern Internet'/>
         <page name='Whats new in Foundation in Swift 3.0'/>
         <page name='Thread Sanitizer and Static Analysis'/>
+        <page name='What&apos;s New in Swift 3.0'/>
     </pages>
 </playground>

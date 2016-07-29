@@ -16,7 +16,7 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ Generics
 
-✅ Unsafe Mutable Pointers
+❌ Unsafe Mutable Pointers
 
 ## Projects 
 
@@ -27,6 +27,8 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 ✅ Property Animators
 
 ✅ StackView 
+
+✅ Autolayout
 
 ❌ Custom Controls (UIControl, Core Craphics, CALayer)
 
@@ -41,8 +43,6 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 ❌ Adaptive Layout 
 
 ❌ CALayer
-
-❌ Autolayout
 
 ❌ App Extensions
 
@@ -64,7 +64,11 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 #WWDC 2016 
 
+✅ What's new in Swift 3
+
 ✅ What's new in Foundation for Swift 3.0 
+
+✅ What's new in Autolayout (Autolayout Project) 
 
 ##I also write Blog Posts on a regular basis:
 
