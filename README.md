@@ -64,6 +64,8 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ❌ SpriteKit
 
+❌ Realm
+
 #WWDC 2016 
 
 ✅ What's new in Swift 3
