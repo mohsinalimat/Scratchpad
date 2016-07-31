@@ -30,13 +30,15 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ Autolayout
 
+❌ NSURLSession
+
+❌ UITableView
+
 ❌ Custom Controls (UIControl, Core Craphics, CALayer)
 
 ❌ CloudKit
 
 ❌ SearchAPI
-
-❌ UITableView
 
 ❌ Saving Data (NSUserDefaults,SQlite & Co.)
 
@@ -51,8 +53,6 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 ❌ AVFoundation
 
 ❌ Animations
-
-❌ NSURLSession
 
 ❌ UI-Testing
 
@@ -72,12 +72,21 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ What's new in Autolayout 
 
-✅ Protocol and Value Oriented Programming in UIKit Apps 
-
 ✅ Improving Apps with modern best practices 
 
+✅ Understanding Swift Performance
+
+❌ NSURLSession: New Features and Best Practices
+
+❌ Protocol and Value Oriented Programming in UIKit Apps 
+
+❌ Concurrent Programming With GCD in Swift 3
+
+❌ Making Apps Adaptive, Part 1 & 2
 
 #WWDC 2015
+
+❌ Optimizing Swift Performance
 
 ❌ Protocol-Oriented Programming in Swift 
 
