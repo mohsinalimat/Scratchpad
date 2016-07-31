@@ -4,29 +4,6 @@ import Foundation
 
 var str = "Hello, playground"
 
-// DOCK 
-
-// The Dock was written in Swift since El Capitan 
-// 200.000 lines of Code 
-// 2.5x more Swift Code
-
-
-// SWIFT OPEN SOURCE 
-
-// swift.org
-// Migration Guides 
-// Documentation 
-// REPL & Debugger etc. 
-// All Development is happening on Github 
-
-// Three Cores
-// • Package Manager 
-// • Core Libraries 
-// •
-
-// API DESIGN
-// Things that really matters is clarity
-
 // OLD
 let array = [2,3,4]
 array.appendContentsOf([4,5,6])
@@ -82,18 +59,6 @@ func plusOne(_a:Int) -> Int {
 plusOne(20)
 _ = plusOne(30) // I dont care about the return value
 
-
-// Features Removed in swift 
-
-// Currying func decalration syntax
-// var in function paramter list
-// ++ and -- operators 
-// C-style for loop
-// Implicit tuple splat in calls
-
-// A lot of Syntax improvements
-// UnsafePointer can use optional syntax 
-
 // Implictly unwrap optionals
 //OLD
 func f(value : Int!) {
@@ -114,19 +79,36 @@ func f(value : Int!) {
 // Floating Point and Numerics
 let v = 2 * Float.pi
 
+// UnsafeMutablePointer support optional binding syntax
+let ptr : UnsafeMutablePointer<Int>? = nil
+if let ptr = ptr {
+    ptr.memory = 42
+}
+
 // SWIFT TOOLS 
-// Revamped dictionary Implementation 
+
+// Revamped dictionary Implementation
+
 // Whole module optimization -> Creates one big file and compiles it 
-// Compiler is bottle neck -> Better chaching etc. 
-// Xcode: Improved navigation in swift code 
+
+// Compiler is bottle neck -> Better chaching etc.
+
+// Xcode: Improved navigation in swift code
 // - All kinds of new Documentation 
 // - Migration
+
 #if swift(>=2.3)
     return frame!
 #else
     return frame
 #endif
 
+// Features Removed in swift
+// • Currying func decalration syntax
+// • var in function paramter list
+// • ++ and -- operators
+// • C-style for loop
+// • Implicit tuple splat in calls
 
 //Other small enhencements
 // • Scoped access level, new fileprivate access level
@@ -149,16 +131,13 @@ let v = 2 * Float.pi
 // • Converting dynamicType from a property to an operator
 
 
-// Add a Lazy flatMap for sequences of optionals
-// Conversions Unsafe[Mutable]Pointer to Int and UInt
-// Change Unmanaged to use UnsafePointer
-// Add first(where:) method to Sequence
-// Add generic result and error handling to autoreleasepool()
-// Failable numeric conversion initializers
-// Adding a public base property to slices
-// Add sequence(first:next:) and sequence(state:next:) to the stdlib
-let ptr : UnsafeMutablePointer<Int>? = nil
-if let ptr = ptr {
-    ptr.memory = 42
-}
+// • Add a Lazy flatMap for sequences of optionals
+// • Conversions Unsafe[Mutable]Pointer to Int and UInt
+// • Change Unmanaged to use UnsafePointer
+// • Add first(where:) method to Sequence
+// • Add generic result and error handling to autoreleasepool()
+// • Failable numeric conversion initializers
+// • Adding a public base property to slices
+// • Add sequence(first:next:) and sequence(state:next:) to the stdlib
+
 //: [Next](@next)

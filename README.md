@@ -16,7 +16,7 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ Generics
 
-❌ Unsafe Mutable Pointers
+✅ Unsafe Mutable Pointers
 
 ## Projects 
 
@@ -65,8 +65,6 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 ❌ SpriteKit
 
 #WWDC 2016 
-
-These are the Talks i watched. Some of them have extra playground pages or projects, the other ones just helped me with extending exisiting projects inside that workspace
 
 ✅ What's new in Swift 3
 

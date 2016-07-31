@@ -7,7 +7,7 @@ import Foundation
 /// Changing something in Foundation changes a lot of things in Cocoa
 
 /// Value types (Copy value on assignment or when passing as paramater)
-/// Value & Reference -> neither is beeter - just used in different ways
+/// Value & Reference -> neither is better - just used in different ways
 /// Reference -> Identiy - Delegates
 
 /*********************************/
@@ -64,6 +64,5 @@ RunLoop.main.add(timer,forMode: .commonModes)
 let byteCount = 32
 var pointer = UnsafeMutablePointer<UInt8>(malloc(byteCount))
 let data = Data(bytesNoCopy: pointer, count: count,  deallocator: .free)
-// Bridging 
 
 
