@@ -58,11 +58,15 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ❌ Core Data
 
-❌ CollectionViews and CollectionLayouts
+❌ CollectionView
+
+❌ CollectionViewLayout
 
 ❌ SpriteKit
 
 #WWDC 2016 
+
+✅ Improving Apps with modern best practices 
 
 ✅ What's new in Swift 3
 

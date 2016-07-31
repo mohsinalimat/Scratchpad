@@ -73,4 +73,7 @@
    <FileRef
       location = "group:WWDC 2016.playground">
    </FileRef>
+   <FileRef
+      location = "group:WWDC2016-ImprovingAppsWithModernBestPractices/WWDC2016-ImprovingAppsWithModernBestPractices.xcodeproj">
+   </FileRef>
 </Workspace>
