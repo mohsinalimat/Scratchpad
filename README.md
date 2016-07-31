@@ -66,13 +66,25 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 #WWDC 2016 
 
-✅ Improving Apps with modern best practices 
+These are the Talks i watched. Some of them have extra playground pages or projects, the other ones just helped me with extending exisiting projects inside that workspace
 
 ✅ What's new in Swift 3
 
-✅ What's new in Foundation for Swift 3.0 
+✅ What's new in Foundation for Swift 3
 
-✅ What's new in Autolayout (Autolayout Project) 
+✅ What's new in Autolayout 
+
+✅ Protocol and Value Oriented Programming in UIKit Apps 
+
+✅ Improving Apps with modern best practices 
+
+
+#WWDC 2015
+
+❌ Protocol-Oriented Programming in Swift 
+
+❌ Building Better Apps with Value Types in Swift 
+ 
 
 ##I also write Blog Posts on a regular basis:
 

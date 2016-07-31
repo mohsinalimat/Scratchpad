@@ -33,7 +33,7 @@ class SubClass : Test {
     
     /*
     override static func cantOverride() {
-        // Uncomment this cause it wont compile -> static means final for some reason
+        // Uncomment this cause it wont compile -> static means final 
     }*/
 }
 
@@ -60,9 +60,10 @@ let timer = Timer(fireDate:Date(),interval:0,repeats:false) {
 
 RunLoop.main.add(timer,forMode: .commonModes)
 
-
 // Native Enumerations
-
+let byteCount = 32
+var pointer = UnsafeMutablePointer<UInt8>(malloc(byteCount))
+let data = Data(bytesNoCopy: pointer, count: count,  deallocator: .free)
 // Bridging 
 
 
