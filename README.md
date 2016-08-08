@@ -2,7 +2,9 @@
 
 Swift 3.0 ✅
 
-This is a curated Workspace containing playgrounds and projects to learn and improve my iOS Framework and Swift Language skills.
+This is a curated Workspace containing playgrounds and projects 
+
+to learn and improve my iOS Framework and Swift Language skills.
 
 ##Playgrounds
 
@@ -15,6 +17,8 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 ✅ Sequence & Generator Protocol
 
 ✅ Generics
+
+✅ CALayer
 
 ✅ Unsafe Mutable Pointers
 
@@ -30,11 +34,15 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ✅ Autolayout
 
+❌ IBDesignable / IBInspectable
+
+❌ Animations
+
+❌ Custom Controls (UIControl, Core Craphics, CALayer)
+
 ❌ NSURLSession
 
 ❌ UITableView
-
-❌ Custom Controls (UIControl, Core Craphics, CALayer)
 
 ❌ CloudKit
 
@@ -44,15 +52,11 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 
 ❌ Adaptive Layout 
 
-❌ CALayer
-
 ❌ App Extensions
 
 ❌ Watch OS
 
 ❌ AVFoundation
-
-❌ Animations
 
 ❌ UI-Testing
 
@@ -65,6 +69,26 @@ This is a curated Workspace containing playgrounds and projects to learn and imp
 ❌ SpriteKit
 
 ❌ Realm
+
+#objc.io Swift Talks 
+
+❌ Networking 
+
+❌ Rendering CommonMark
+
+❌ Generic TableViews 
+
+❌ Loading View Controllers
+
+❌ Rendering CommonMark (Part 2)
+
+❌ Connecting View Controllers
+
+❌ Generic Table View Controllers
+
+❌ Stack Views with Enums
+
+❌ Networking: POST Requests
 
 #WWDC 2016 
 

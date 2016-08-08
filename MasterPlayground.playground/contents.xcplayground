@@ -9,6 +9,7 @@
         <page name='Advanced Swift'/>
         <page name='Optionals'/>
         <page name='Generics'/>
-        <page name='Property Animators'/>
+        <page name='UnsafeMutablePointers'/>
+        <page name='CALayer'/>
     </pages>
 </playground>
