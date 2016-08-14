@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBDesignable_IBInspectable" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sp7-oi-UnZ" customClass="ArcView" customModule="IBDesignable_IBInspectable" customModuleProvider="target">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.86666666670000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Sp7-oi-UnZ" secondAttribute="height" multiplier="1:1" id="0wT-tC-J4G"/>
+                                    <constraint firstAttribute="height" constant="150" id="CCg-l8-1UK"/>
+                                    <constraint firstAttribute="width" secondItem="Sp7-oi-UnZ" secondAttribute="height" multiplier="1:1" id="CgH-x9-VcU"/>
+                                    <constraint firstAttribute="width" constant="150" id="tYE-Ki-M5t"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pathPosition">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fgColor">
+                                        <color key="value" red="0.96860000000000002" green="0.18429999999999999" blue="0.3569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0wT-tC-J4G"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="fSl-Fz-NEF">
+                                <rect key="frame" x="253" y="430" width="94" height="29"/>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fSl-Fz-NEF" firstAttribute="top" secondItem="Sp7-oi-UnZ" secondAttribute="bottom" constant="55" id="0w2-tB-I7O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sp7-oi-UnZ" secondAttribute="trailing" constant="50" id="e9F-YU-Do8"/>
+                            <constraint firstItem="Sp7-oi-UnZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="j3v-lB-Quq"/>
+                            <constraint firstItem="fSl-Fz-NEF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m88-d6-W07"/>
+                            <constraint firstItem="Sp7-oi-UnZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xPi-QU-ewU"/>
+                            <constraint firstItem="Sp7-oi-UnZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="zoD-Eq-yRL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="e9F-YU-Do8"/>
+                                <exclude reference="zoD-Eq-yRL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="arcView" destination="Sp7-oi-UnZ" id="7c2-UH-Cgz"/>
+                        <outlet property="stepper" destination="fSl-Fz-NEF" id="wOk-Cw-kzU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

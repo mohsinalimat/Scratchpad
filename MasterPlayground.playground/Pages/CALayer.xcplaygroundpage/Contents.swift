@@ -24,8 +24,9 @@ import XCPlayground
 /// Layers have great comback because flat desing has its come back
 /// Layers can have sublayers
 
-/// CALayer
 
+/// GOTO IBInspectable / IBDesignable for a real world example
+/// CALayer
 let mainView = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
 mainView.backgroundColor = UIColor.whiteColor()
 let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
@@ -77,7 +78,26 @@ button.layer.masksToBounds = true
 button
 
 /// CAShapeLayer
+button.removeFromSuperview
 
-/// Layer Masking
+/// Use UIBezierPath, a handy way to create CGPaths 
+let rectPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 40, height: 40))
+let ovalPath = UIBezierPath(ovalInRect: mainView.bounds)
+ovalPath.lineWidth = 2.0
+ovalPath
+
+let roundedRect = UIBezierPath(roundedRect: mainView.frame, cornerRadius: 5)
+roundedRect.lineWidth = 2.0
+roundedRect
+
+let customPath = UIBezierPath()
+customPath.lineWidth = 5.0
+customPath.moveToPoint(CGPoint(x: 0, y: 0))
+customPath.addLineToPoint(CGPoint(x: 5, y: 5))
+customPath.addLineToPoint(CGPoint(x: 10, y: 10))
+customPath.addLineToPoint(CGPoint(x: 0, y: 0))
+
+customPath.closePath()
+customPath
 
 //: [Next](@next)

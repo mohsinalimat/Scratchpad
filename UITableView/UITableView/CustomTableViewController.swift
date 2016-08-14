@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class CustomTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +18,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
+// MARK: UITableViewDelegate
+
+extension CustomTableViewController {
+    
+}
+
+// MARK: UITableViewDataSource
+
+extension CustomTableViewController {
+    
+}

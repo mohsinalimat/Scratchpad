@@ -4,7 +4,7 @@ Swift 3.0 ✅
 
 This is a curated Workspace containing playgrounds and projects 
 
-to learn and improve my iOS Framework and Swift Language skills.
+to learn new iOS releated things and improve my iOS Framework and Swift Language skills.
 
 ##Playgrounds
 
@@ -24,7 +24,7 @@ to learn and improve my iOS Framework and Swift Language skills.
 
 ## Projects 
 
-✅ Grand Central Dispatch
+✅ GCD - Grand Central Dispatch
 
 ✅ MapKit and Core Location 
 
@@ -34,15 +34,15 @@ to learn and improve my iOS Framework and Swift Language skills.
 
 ✅ Autolayout
 
-❌ IBDesignable / IBInspectable
+✅ IBDesignable / IBInspectable
+
+❌ UITableView (self-sizing cells etc.)
 
 ❌ Animations
 
 ❌ Custom Controls (UIControl, Core Craphics, CALayer)
 
 ❌ NSURLSession
-
-❌ UITableView
 
 ❌ CloudKit
 

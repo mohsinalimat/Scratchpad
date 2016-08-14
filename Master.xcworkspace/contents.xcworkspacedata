@@ -35,9 +35,6 @@
       location = "group:Saving-Data/Saving-Data.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CALayer/CALayer.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:App-Extensions/App-Extensions.xcodeproj">
    </FileRef>
    <FileRef
@@ -60,6 +57,9 @@
    </FileRef>
    <FileRef
       location = "group:GCD-Grand Central Dispatch/GCD-Grand Central Dispatch.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:IBDesignable-IBInspectable/IBDesignable-IBInspectable.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CollectionViews/CollectionViews.xcodeproj">
