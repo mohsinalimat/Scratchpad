@@ -6,7 +6,7 @@ This is a curated Workspace containing playgrounds and projects
 
 to learn new iOS releated things and improve my iOS Framework and Swift Language skills.
 
-##Playgrounds
+##Swift-Playgrounds
 
 ✅ Optionals
 
@@ -22,6 +22,8 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ✅ Unsafe Mutable Pointers
 
+✅ Associated Types
+
 ## Projects 
 
 ✅ GCD - Grand Central Dispatch
@@ -36,7 +38,7 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ✅ IBDesignable / IBInspectable
 
-❌ UITableView (self-sizing cells etc.)
+✅ UITableView
 
 ❌ Animations
 
@@ -67,6 +69,8 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 ❌ CollectionViewLayout
 
 ❌ SpriteKit
+
+❌ Core Text / TextKit
 
 ❌ Realm
 

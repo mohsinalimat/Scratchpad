@@ -11,5 +11,6 @@
         <page name='Generics'/>
         <page name='UnsafeMutablePointers'/>
         <page name='CALayer'/>
+        <page name='Associated Types'/>
     </pages>
 </playground>

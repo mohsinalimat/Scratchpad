@@ -26,7 +26,7 @@ public func getCoordinatesFromAddress(addressString:String,completion:([CLPlacem
 }
 
 func testStringToCoordinates() {
-    getCoordinatesFromAddress(addressString: "Neubukower Straße 1, 18230 Zweedorf", completion: {
+    getCoordinatesFromAddress("Neubukower Straße 1, 18230 Zweedorf", completion: {
         placeMarks, error in
         if let placemark = placeMarks?.first {
             let latitude = placemark.location?.coordinate.latitude

@@ -37,15 +37,15 @@ class MapKitViewController: UIViewController {
 }
 
 extension MapKitViewController : CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedAlways || status == .authorizedWhenInUse {
+    func locationManager(manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == CLAuthorizationStatus.AuthorizedAlways || status == CLAuthorizationStatus.AuthorizedWhenInUse {
             
         }
     }
 }
 
 extension MapKitViewController : MKMapViewDelegate {
-    func mapViewWillStartRenderingMap(_ mapView: MKMapView) {
+    func mapViewWillStartRenderingMap(mapView: MKMapView) {
         print("Rendering")
     }
 }
