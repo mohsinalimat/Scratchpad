@@ -52,7 +52,7 @@ class ViewController: UIViewController {
 // MARK: UITableViewDelegate - Events and Customization
 
 extension ViewController: UITableViewDelegate {
-    
+
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         guard isEditing == true else {
             return indexPath
@@ -104,11 +104,34 @@ extension ViewController: UITableViewDelegate {
         }
 
     }
+    
+    func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        if proposedDestinationIndexPath.row >= self.data[proposedDestinationIndexPath.section].count {
+            return NSIndexPath(item: self.data[proposedDestinationIndexPath.section].count-1, section:proposedDestinationIndexPath.section) as IndexPath
+        } else {
+           return proposedDestinationIndexPath
+        }
+    }
 }
 
 // MARK: UITableViewDataSource
 
 extension ViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let temp = self.data[sourceIndexPath.section][sourceIndexPath.row] // Store item to remove
+        self.data[sourceIndexPath.section].remove(at: sourceIndexPath.row) // Remove old
+        self.data[destinationIndexPath.section].insert(temp, at: destinationIndexPath.row)
+    }
+
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        let sectionData = self.data[indexPath.section]
+        if indexPath.row < sectionData.count && self.tableView.isEditing {
+            return true
+        } else {
+            return false
+        }
+    }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
