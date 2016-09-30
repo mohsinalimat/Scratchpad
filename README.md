@@ -24,7 +24,7 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ✅ Associated Types
 
-## Projects 
+##iOS-Projects 
 
 ✅ GCD - Grand Central Dispatch
 
@@ -74,7 +74,13 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ❌ Realm
 
-#objc.io Swift Talks 
+##Design Patterns in Swift 
+
+#Behavioral
+
+❌ Chain of Responsibility  
+
+##objc.io Swift Talks 
 
 ❌ Networking 
 
@@ -94,7 +100,7 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ❌ Networking: POST Requests
 
-#WWDC 2016 
+##WWDC 2016 
 
 ✅ What's new in Swift 3
 
@@ -114,7 +120,7 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ❌ Making Apps Adaptive, Part 1 & 2
 
-#WWDC 2015
+##WWDC 2015
 
 ❌ Optimizing Swift Performance
 

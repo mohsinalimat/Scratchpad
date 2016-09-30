@@ -27,12 +27,12 @@ class CustomView : UIView {
         super.init(coder: aDecoder)
         self.prepareView()
     }
-    override func intrinsicContentSize() -> CGSize {
+    override var intrinsicContentSize : CGSize {
         return CGSize(width: 200, height: 400)
     }
     
-    private func prepareView() {
-        self.backgroundColor = UIColor.red()
+    fileprivate func prepareView() {
+        self.backgroundColor = UIColor.red
     }
 }
 

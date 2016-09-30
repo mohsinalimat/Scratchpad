@@ -71,6 +71,9 @@
       location = "group:MasterPlayground.playground">
    </FileRef>
    <FileRef
+      location = "group:Behavioral-Design-Patterns.playground">
+   </FileRef>
+   <FileRef
       location = "group:WWDC 2016.playground">
    </FileRef>
 </Workspace>

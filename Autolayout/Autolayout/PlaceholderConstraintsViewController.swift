@@ -13,12 +13,12 @@ class PlaceholderConstraintsViewController: UIViewController {
     @IBOutlet weak var imageView : UIImageView?
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareImageView(name:"logo")
+        prepareImageView("logo")
     }
 }
 
 extension PlaceholderConstraintsViewController {
-    private func prepareImageView(name:String) {
+    fileprivate func prepareImageView(_ name:String) {
         if let image = UIImage(named: name), let imageView = imageView {
             imageView.image = image
             let aspectRatio = (height:image.size.height,width:image.size.width)
