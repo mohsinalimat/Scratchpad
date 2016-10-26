@@ -2,7 +2,7 @@
 
 import Foundation
 
-var test : Int? = .Some(20)
+var test : Int? = .some(20)
 
 // I am a simple variable 
 var count = 10
@@ -15,6 +15,13 @@ var singleOptional : Int? = 20
 switch singleOptional {
     case .Some(let value): print("Optional has an value of \(value)")
     case .None: print("nothing stored inside the enum")
+}
+
+switch singleOptional {
+case r?:
+    print(r)
+default:
+    print("nil")
 }
 
 /// Basically that is all the magic behind optionals

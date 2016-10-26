@@ -76,9 +76,18 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ##Design Patterns in Swift 
 
-#Behavioral
+#Creational
 
-❌ Chain of Responsibility  
+✅ Prototype
+
+❌ Factory Method
+
+❌ Singleton
+
+❌ Builder
+
+❌ Abstract Factory
+
 
 ##objc.io Swift Talks 
 
