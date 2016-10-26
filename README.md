@@ -80,9 +80,9 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ✅ Prototype
 
-❌ Factory Method
+✅ Singleton
 
-❌ Singleton
+❌ Factory Method
 
 ❌ Builder
 
