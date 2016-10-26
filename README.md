@@ -146,6 +146,9 @@ https://medium.com/ios-os-x-development/my-ios-development-toolkit-2016-ba7601b6
 ###Swift Optionals
 https://medium.com/ios-os-x-development/swift-optionals-78dafaa53f3#.tutvx35l6
 
+###SWIFTBITES Issue NO. 1 — Optional Pattern Matching
+https://medium.com/ios-os-x-development/swiftbites-issue-no-1-an-optional-feature-i-didnt-know-so-far-4d417272f13b#.st1ozsl8k
+
 ###Code Signing & Provisioning
 https://medium.com/ios-os-x-development/ios-code-signing-provisioning-in-a-nutshell-d5b247760bef#.ftjwkamm8
 
