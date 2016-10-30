@@ -47,7 +47,7 @@ class ViewController: UIViewController {
 
 extension ViewController : CLLocationManagerDelegate {
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if startLocation == nil {
             startLocation = locations.first
         } else {
@@ -58,9 +58,9 @@ extension ViewController : CLLocationManagerDelegate {
         }
     }
     /// If the user accepted location services for your app if will call this method
-    func locationManager(manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         /// if the user authorized on of the following options start tracking 
-        if status == CLAuthorizationStatus.AuthorizedWhenInUse || status == CLAuthorizationStatus.AuthorizedAlways {
+        if status == CLAuthorizationStatus.authorizedWhenInUse || status == CLAuthorizationStatus.authorizedAlways {
             locationManager?.startUpdatingLocation()
             locationManager?.allowsBackgroundLocationUpdates = true // You need to set this in iOS9
         }
@@ -68,21 +68,21 @@ extension ViewController : CLLocationManagerDelegate {
     
     
     /// You should implement this method, if this method isnt implemented your App will crash
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         // User CLError to determine which kind of error was thrown
         //let _ = CLError.denied // User denied Location Services
     }
     
     /// Geofencing Delegate Methods
-    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         
     }
     
-    func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         
     }
     
-    func locationManager(manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: NSError) {
+    func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
         
     }
 }

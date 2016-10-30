@@ -19,14 +19,14 @@ public func getAddressFromCoordinates(completion:([CLPlacemark]?,NSError?)->()) 
     // TODO: Implement this
 }
 
-public func getCoordinatesFromAddress(addressString:String,completion:([CLPlacemark]?,NSError?)->()) {
+public func getCoordinatesFromAddress(addressString:String, completion: @escaping  ([CLPlacemark]?,Error?)->()) {
     let goeCoder = CLGeocoder()
     goeCoder.geocodeAddressString(addressString,completionHandler:completion)
 
 }
 
 func testStringToCoordinates() {
-    getCoordinatesFromAddress("Neubukower Straße 1, 18230 Zweedorf", completion: {
+    getCoordinatesFromAddress(addressString: "Neubukower Straße 1, 18230 Zweedorf", completion: {
         placeMarks, error in
         if let placemark = placeMarks?.first {
             let latitude = placemark.location?.coordinate.latitude

@@ -22,4 +22,19 @@ t.append(item:"Was geht ab")
 print(t.items)
 
 
+protocol HasMethodTest {
+    associatedtype ItemType
+    func testMethod(test: ItemType)
+}
+
+struct  GenericStruct<T> : HasMethodTest {
+    typealias ItemType = String
+    func testMethod(test: ItemType) {
+        print("\(Mirror(reflecting:self))")
+    }
+}
+
+let genericObject = GenericStruct<Int>()
+genericObject.testMethod(test: "Hello")
+
 //: [Next](@next)
