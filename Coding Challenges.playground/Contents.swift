@@ -53,10 +53,27 @@ func countFrom(from: Int, to: Int) {
 
 countFrom(from: 0, to: 3)
 
+/* Write a single function that reverses the text in a string. For example, when passed the string “Marin Todorov” will return the string “vorodoT niraM”. Dont use loops etc. use Recursion */
+
+
+extension String {
+    func reversed() -> String {
+        return reverseString(text: self, lastCharacters: "")
+    }
+    
+    fileprivate func reverseString(text:String, lastCharacters: String) -> String {
+        if let lastCharacter = text.characters.last {
+            let subText = text.substring(to: text.index(text.endIndex, offsetBy: -1))
+            return reverseString(text: subText, lastCharacters: lastCharacters + String(lastCharacter))
+        } else {
+            return lastCharacters
+        }
+    }
+}
 
 
 
-
+"Reverse Me".reversed()
 
 
 

@@ -98,6 +98,9 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ✅ Print each value of array wihtout using any loop operators, variables, nor any built-in Array functions
 
+✅ Write a String Extension that uses recursion to reverse a String 
+
+
 ##objc.io Swift Talks 
 
 ❌ Networking 
@@ -155,11 +158,11 @@ https://medium.com/ios-os-x-development/my-ios-development-toolkit-2016-ba7601b6
 ###Swift Optionals
 https://medium.com/ios-os-x-development/swift-optionals-78dafaa53f3#.tutvx35l6
 
-###SWIFTBITES Issue NO. 1 — Optional Pattern Matching
-https://medium.com/ios-os-x-development/swiftbites-issue-no-1-an-optional-feature-i-didnt-know-so-far-4d417272f13b#.st1ozsl8k
-
 ###Code Signing & Provisioning
 https://medium.com/ios-os-x-development/ios-code-signing-provisioning-in-a-nutshell-d5b247760bef#.ftjwkamm8
 
 ###UIStackView
 https://medium.com/@sebastianbo/why-you-should-use-uistackview-or-on-of-its-open-source-alternatives-d1a0d2bbdc19#.p9hfbpe45
+
+###SWIFTBITES Issue NO. 1 — Optional Pattern Matching
+https://medium.com/ios-os-x-development/swiftbites-issue-no-1-an-optional-feature-i-didnt-know-so-far-4d417272f13b#.st1ozsl8k
