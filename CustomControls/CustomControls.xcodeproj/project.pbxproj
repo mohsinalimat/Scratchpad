@@ -12,6 +12,8 @@
 		155E8AE91D2B7E6F00AE03B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155E8AE71D2B7E6F00AE03B8 /* Main.storyboard */; };
 		155E8AEB1D2B7E6F00AE03B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155E8AEA1D2B7E6F00AE03B8 /* Assets.xcassets */; };
 		155E8AEE1D2B7E6F00AE03B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155E8AEC1D2B7E6F00AE03B8 /* LaunchScreen.storyboard */; };
+		15E312831DD77503005ED411 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E312821DD77503005ED411 /* CustomButton.swift */; };
+		15E312851DD7879D005ED411 /* IconControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E312841DD7879D005ED411 /* IconControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		155E8AEA1D2B7E6F00AE03B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155E8AED1D2B7E6F00AE03B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		155E8AEF1D2B7E6F00AE03B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E312821DD77503005ED411 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		15E312841DD7879D005ED411 /* IconControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				155E8AE31D2B7E6F00AE03B8 /* AppDelegate.swift */,
 				155E8AE51D2B7E6F00AE03B8 /* ViewController.swift */,
+				15E312821DD77503005ED411 /* CustomButton.swift */,
+				15E312841DD7879D005ED411 /* IconControl.swift */,
 				155E8AE71D2B7E6F00AE03B8 /* Main.storyboard */,
 				155E8AEA1D2B7E6F00AE03B8 /* Assets.xcassets */,
 				155E8AEC1D2B7E6F00AE03B8 /* LaunchScreen.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					155E8ADF1D2B7E6F00AE03B8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -135,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E312831DD77503005ED411 /* CustomButton.swift in Sources */,
 				155E8AE61D2B7E6F00AE03B8 /* ViewController.swift in Sources */,
+				15E312851DD7879D005ED411 /* IconControl.swift in Sources */,
 				155E8AE41D2B7E6F00AE03B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +262,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianboldt.CustomControls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,6 +274,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianboldt.CustomControls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +297,7 @@
 				155E8AF41D2B7E6F00AE03B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

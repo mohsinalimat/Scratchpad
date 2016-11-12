@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomControls" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drawing_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,33 +21,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jX2-bX-iVc" customClass="CustomIconButton" customModule="CustomControls" customModuleProvider="target">
-                                <rect key="frame" x="142" y="314" width="91" height="40.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nq3-si-Mhx" customClass="Canvas" customModule="Drawing_Application" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Press me"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                        <color key="value" red="0.1333333333" green="0.86666666670000003" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5G9-dz-9A9"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jX2-bX-iVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="65S-5P-3wB"/>
-                            <constraint firstItem="jX2-bX-iVc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yh0-id-T9R"/>
+                            <constraint firstItem="nq3-si-Mhx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NA3-ej-PMR"/>
+                            <constraint firstAttribute="trailing" secondItem="nq3-si-Mhx" secondAttribute="trailing" id="PDE-M9-DXO"/>
+                            <constraint firstItem="nq3-si-Mhx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hXW-s4-U3a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nq3-si-Mhx" secondAttribute="bottom" id="rIE-EU-TRV"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

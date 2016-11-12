@@ -11,8 +11,8 @@ void method(const int *num) {
 
 /// Its Swift equivalent would be 
 
-func method(num: UnsafePointer<CInt>) {
-    print(num.memory) // Access Pointers value using the memory
+func method(_ num: UnsafePointer<CInt>) {
+    print(num.pointee) // Access Pointers value using the memory
 }
 
 /// const Type * --> UnsafePointer

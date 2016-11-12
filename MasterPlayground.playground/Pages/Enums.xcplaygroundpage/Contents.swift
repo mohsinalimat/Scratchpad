@@ -4,27 +4,27 @@ import Foundation
 
 /// Defining an enum called Movement with 4 Options
 enum Movement {
-    case Left
-    case Right
-    case Top
-    case Bottom
+    case left
+    case right
+    case top
+    case bottom
 }
 
 /// Creating an Instance of Movement
-let aMovement = Movement.Left
+let aMovement = Movement.left
 
 /// Different Kinds of checking an enums value
 
 switch aMovement {
-case .Left: print("Left")
-case .Right: print("Right")
+case .left: print("Left")
+case .right: print("Right")
 default: Void() // you can also just write ()
 }
 
-if case .Left = aMovement {print("Left")}
-else if case .Right = aMovement {print("Right")}
+if case .left = aMovement {print("Left")}
+else if case .right = aMovement {print("Right")}
 
-if aMovement == .Left {print("Left")}
+if aMovement == .left {print("Left")}
 
 
 /// Giving enum cases raw values 
@@ -61,9 +61,9 @@ if let dayFromRawOptional = dayFromRawValue {
 //Nesting Enums 
 enum Car {
     enum Electric {
-        case Radio
-        case ESP
-        case ABS
+        case radio
+        case esp
+        case abs
     }
     
     enum Mechanic {
@@ -72,13 +72,13 @@ enum Car {
         case gearbox
     }
     
-    case SUV
-    case Roadster
-    case Pickup
+    case suv
+    case roadster
+    case pickup
 }
 
 let partOfCar = Car.Mechanic.engine
-let typeOfCar = Car.Roadster
+let typeOfCar = Car.roadster
 
 // Containing Enums 
 
@@ -121,11 +121,11 @@ default:()
 
 /// Tuples as Arguments 
 enum EnumWithAssociatedValue {
-    case TestCase(String,Int,String,Int)
+    case testCase(String,Int,String,Int)
 }
 let tupel = ("Hello",1337,"World",666)
 /// This shit is deprecated
-let testEnum = EnumWithAssociatedValue.TestCase(tupel)
+let testEnum = EnumWithAssociatedValue.testCase(tupel)
 
 
 //: [Next](@next)

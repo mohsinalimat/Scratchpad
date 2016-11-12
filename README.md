@@ -40,9 +40,13 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ✅ UITableView
 
-❌ Animations
+✅ Custom Controls (UIControl, Core Craphics, CALayer)
 
-❌ Custom Controls (UIControl, Core Craphics, CALayer)
+✅ Creating dynamic Frameworks
+
+✅ Simple Drawing App
+
+❌ Animations
 
 ❌ NSURLSession
 

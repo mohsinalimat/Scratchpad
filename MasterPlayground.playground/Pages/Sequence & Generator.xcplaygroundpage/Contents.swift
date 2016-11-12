@@ -29,7 +29,7 @@ class Book {
 
 // In order for the libary to support looping it needs to implement the sequence protocol
 
-class Library : SequenceType {
+class Library : Sequence {
     var books = Array<Book>()
     var numberOfBooks : Int {
         return self.books.count
@@ -39,14 +39,14 @@ class Library : SequenceType {
         self.books = books
     }
     
-    func generate() -> LibraryGenerator{
+    func makeIterator() -> LibraryGenerator{
         return LibraryGenerator(library: self)
     }
 }
 
 // Generator Type defines how to iterate through a specific collection
 // The GeneratorType needs to implement the next methods
-class LibraryGenerator : GeneratorType {
+class LibraryGenerator : IteratorProtocol {
     var currentIndex = 0
     let library : Library
     typealias Element = Book

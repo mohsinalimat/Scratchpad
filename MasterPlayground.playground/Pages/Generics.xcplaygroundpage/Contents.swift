@@ -13,7 +13,7 @@ protocol Combinable {
 }
 
 /// Next we create a Generic function that can add two parameters that are Combinable
-func add<Addend:Combinable>(a:Addend,b:Addend) -> Addend {
+func add<Addend:Combinable>(_ a:Addend,b:Addend) -> Addend {
     return a + b
 }
 
@@ -45,13 +45,13 @@ struct Stack<T> {
     
     internal var stack : [T] = [T]() // should be private, made this public for playground
     
-    internal mutating func push(element:T) {
-        stack.insert(element, atIndex: 0)
+    internal mutating func push(_ element:T) {
+        stack.insert(element, at: 0)
     }
     
     internal mutating func pop() -> T {
         let poppedElement = stack[0]
-        stack.removeAtIndex(0)
+        stack.remove(at: 0)
         return poppedElement
     }
 }

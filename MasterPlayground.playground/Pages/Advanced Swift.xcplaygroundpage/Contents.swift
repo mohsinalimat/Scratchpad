@@ -12,7 +12,7 @@ print(anotherFilteredArray)
 // Rewriting filter 
 
 extension Array {
-    func ownFilter(with: (Element -> Bool)) -> [Element] {
+    func ownFilter(_ with: ((Element) -> Bool)) -> [Element] {
         var newArray = [Element]()
         for element in self {
             if with(element) {

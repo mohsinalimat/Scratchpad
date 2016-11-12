@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  CustomControls
+//  Drawing Application
 //
-//  Created by Sebastian Boldt on 05.07.16.
+//  Created by Sebastian Boldt on 12.11.16.
 //  Copyright © 2016 Sebastian Boldt. All rights reserved.
 //
 
@@ -20,9 +20,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func pressedButton(_ sender: Any) {
-        print("Controller catched event")
-    }
-
+    
 }
 

@@ -5,7 +5,7 @@ import Foundation
 //: # NSURL
 
 let urlString = "http://www.sebastianboldt.com/developer/music?parameter=1000"
-let url = NSURL(string: urlString)
+let url = URL(string: urlString)
 
 url?.baseURL
 url?.host
@@ -18,13 +18,13 @@ url?.absoluteString
 
 //: # NSURLComponents
 
-let components = NSURLComponents()
+var components = URLComponents()
 components.host = "sebastianboldt.com"
 components.scheme = "http"
 components.fragment = "scrollToMenu"
-let queryItem = NSURLQueryItem(name:"test", value: "200")
+let queryItem = URLQueryItem(name:"test", value: "200")
 components.queryItems = [queryItem]
-components.URL
+components.url
 
 
 // NSURLRequest

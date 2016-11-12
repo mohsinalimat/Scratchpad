@@ -4,21 +4,21 @@ import Foundation
 
 //: # NSOperation
 
-class CustomTask : NSOperation {
+class CustomTask : Operation {
     override func start() {
         print("I am running")
     }
 }
 
-let queue = NSOperationQueue()
-queue.addOperationWithBlock(){
+let queue = OperationQueue()
+queue.addOperation(){
     print("I am also running")
-    print("\(NSOperationQueue.currentQueue())")
+    print("\(OperationQueue.current)")
 }
 queue.addOperation(CustomTask())
 
 // Adding block to mainQueue
-NSOperationQueue.mainQueue().addOperationWithBlock(){
+OperationQueue.main.addOperation(){
     print("I am running on a background thread")
 }
 //: [Next](@next)
