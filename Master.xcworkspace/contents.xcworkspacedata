@@ -68,6 +68,9 @@
       location = "group:SpriteKit/SpriteKit.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Coding Challenges.playground">
+   </FileRef>
+   <FileRef
       location = "group:MasterPlayground.playground">
    </FileRef>
    <FileRef

@@ -82,12 +82,21 @@ to learn new iOS releated things and improve my iOS Framework and Swift Language
 
 ✅ Singleton
 
-❌ Factory Method
+✅ Factory Method
 
-❌ Builder
+✅ Builder
 
 ❌ Abstract Factory
 
+## Tiny Swift Coding Challenges 
+
+✅ Swapping two values with one line of code
+
+✅ Write a Function that joins three Strings with one line of code
+
+✅ Write a Function that appends descriptions of objects that are CustomStringConvertible
+
+✅ Print each value of array wihtout using any loop operators, variables, nor any built-in Array functions
 
 ##objc.io Swift Talks 
 
