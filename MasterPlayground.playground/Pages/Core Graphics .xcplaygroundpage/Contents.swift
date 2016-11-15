@@ -104,6 +104,5 @@ var view = UIView(frame: mainFrame)
 view.layer.addSublayer(shapeLayer)
 view
 
-
 //: [Next](@next)
 
